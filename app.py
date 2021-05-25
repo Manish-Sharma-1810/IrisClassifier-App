@@ -45,6 +45,12 @@ def main():
             st.success(classify(rf.predict(inputs)))
         else:
             st.success(classify(log_model.predict(inputs)))
+            
+    st.markdown(
+    """<a style='display: block; text-align: center;' href="https://github.com/Manish-Sharma-1810/IrisClassifier-App" target="_blank">Source code</a>
+       <a style='display: block; text-align: center;' href="https://github.com/Manish-Sharma-1810/IrisClassifier-App/blob/main/iris_models.ipynb" target="_blank">Jupyter File</a>
+       <a style='display: block; text-align: center;' href="https://www.linkedin.com/in/manish-kumar-1810?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSvgfK3HQSWC506NySLl1PQ%3D%3D" target="_blank">LinkedIn</a>
+    """, unsafe_allow_html=True)
 
 
 if __name__=='__main__':
